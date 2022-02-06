@@ -5,6 +5,7 @@ set -x
 export PYTHONPATH="${PYTHONPATH}:$(pwd)"
 echo "PYTHONPATH: $PYTHONPATH"
 export DYNAMODB_TABLE=todoUnitTestsTable
+pip install boto3
 python test/unit/TestToDo.py
 pip show coverage
 coverage run --include=src/todoList.py test/unit/TestToDo.py
