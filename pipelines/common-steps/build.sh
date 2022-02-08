@@ -2,5 +2,5 @@
 
 source todo-list-aws/bin/activate
 set -x
-sam validate --region us-east-1
+sam validate --region eu-west-3
 sam build
